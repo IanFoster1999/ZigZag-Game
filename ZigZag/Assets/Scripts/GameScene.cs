@@ -41,6 +41,7 @@ public class GameScene : MonoBehaviour {
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
+
     public void MenuScene()
     {
         SceneManager.LoadScene("MainMenu");

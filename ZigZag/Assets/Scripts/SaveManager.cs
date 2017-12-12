@@ -36,6 +36,34 @@ public class SaveManager : MonoBehaviour {
         }
     }
 
+    //Check if skin is owned
+    public bool IsSkinOwned(int index)
+    {
+        return (state.skinOwned & (1 << index)) != 0;
+    }
+
+    //Attemp buying a skin
+    public bool BuySkin(int index, int cost)
+    {
+        if(state.coins >= cost)
+        {
+            state.coins -= cost;
+            UnlockSkin(index);
+            Save();
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    //Unlock a skin in the "skinOwned" int
+    public void UnlockSkin(int index)
+    {
+        state.skinOwned |= 1 << index;
+    }
+
     //Reset the save
     public void ResetSave()
     {

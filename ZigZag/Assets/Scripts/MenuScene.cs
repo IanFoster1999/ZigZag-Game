@@ -28,4 +28,15 @@ public class MenuScene : MonoBehaviour {
     {
         SceneManager.LoadScene("Game");
     }
+
+    public void OnShopClick()
+    {
+        SceneManager.LoadScene("Shop");
+    }
+
+    public void OnResetClick()
+    {
+        SaveManager.Instance.ResetSave();
+        SceneManager.LoadScene("Preloader");
+    }
 }

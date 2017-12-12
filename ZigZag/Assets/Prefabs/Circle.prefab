@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 212184957954170344}
   - component: {fileID: 58281332235694788}
   - component: {fileID: 114141790956277258}
+  - component: {fileID: 114980923317833970}
   m_Layer: 0
   m_Name: Circle
   m_TagString: Untagged
@@ -68,6 +69,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4316c11a999649a43804460339873cca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sp: {fileID: 0}
+--- !u!114 &114980923317833970
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1068061502846212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8656ba3a9a1700145a983e5f2c93bd62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreToAdd: 1
 --- !u!212 &212184957954170344
 SpriteRenderer:
   m_ObjectHideFlags: 1
